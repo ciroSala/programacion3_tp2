@@ -3,14 +3,16 @@ package tp2;
 public class Main {
     public static void main(String[] args) {
         int [] arr = new int[7];
-        arr[0] = 1;
-        arr[1] = 2;
-        arr[2] = 3;
-        arr[3] = 4;
-        arr[4] = 5;
-        arr[5] = 6;
-        arr[6] = 7;
+        arr[0] = 5;
+        arr[1] = 4;
+        arr[2] = 8;
+        arr[3] = 2;
+        arr[4] = 4;
+        arr[5] = 1;
+        arr[6] = 3;
         Recursividad recursividad = new Recursividad();
-        System.out.println(recursividad.calcularBinario(26));
+        System.out.println(recursividad.toString(arr));
+        recursividad.ordenamientoPorSeleccion(arr);
+        System.out.println(recursividad.toString(arr));
     }
 }
