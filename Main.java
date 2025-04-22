@@ -1,18 +1,19 @@
 package tp2;
 
+import tp2.arboles.Tree;
+
 public class Main {
     public static void main(String[] args) {
-        int [] arr = new int[7];
-        arr[0] = 5;
-        arr[1] = 4;
-        arr[2] = 8;
-        arr[3] = 2;
-        arr[4] = 4;
-        arr[5] = 1;
-        arr[6] = 3;
-        Recursividad recursividad = new Recursividad();
-        System.out.println(recursividad.toString(arr));
-        recursividad.ordenamientoPorSeleccion(arr);
-        System.out.println(recursividad.toString(arr));
+        Tree arbolito = new Tree();
+        arbolito.add(10);
+//        arbolito.add(5);
+//        arbolito.add(2);
+//        arbolito.add(8);
+//        arbolito.add(15);
+//        arbolito.add(12);
+//        arbolito.add(18);
+//        arbolito.add(16);
+        arbolito.printPreOrder();
+        System.out.println(arbolito.getHeight());
     }
 }
